@@ -1,6 +1,5 @@
 (**** LECTURE 1: Algorithms and Recursive Functions ****)
 (**** Exercise 1.2 ****)
-
 exception UNDEFINED
 fun decode1 a =
   let
