@@ -13,9 +13,9 @@ fun remove_duplicates [] = []
     end
 
 (* Remove duplicates from sorted list *)
-fun remove_dups (head :: (tail_list as t :: _)) =
+fun remove_dups (head::(tail_list as t :: _)) =
   if head = t then
       remove_dups tail_list
   else
-      head :: remove_dups tail_list
+      head::remove_dups tail_list
 |   remove_dups tail_list = tail_list;
